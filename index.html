@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Contact us</title>
+  </head>
+  <body>
+    <div class="maincontainer">
+      <div class="container">
+        <h1>Contact Us</h1>
+        <form>
+        
+          <div class="name">
+            <div class="name1">
+                <div class="form-group">
+                    <label for="firstName">First Name *</label>
+                    <input type="text" id="firstName" name="firstName" required />
+                  </div>
+      
+                  <div class="form-group">
+                    <label for="lastName">Last Name *</label>
+                    <input type="text" id="lastName" name="lastName" required />
+                  </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="mail">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="box">
+                
+            </div>
+            <label for="queryType">Query Type</label>
+            <div class="radio-group">
+              <input
+                type="radio"
+                id="generalEnquiry"
+                name="queryType"
+                value="General Enquiry"
+              />
+              <label for="generalEnquiry">General Enquiry</label>
+            </div>
+            <div class="radio-group">
+              <input
+                type="radio"
+                id="supportRequest"
+                name="queryType"
+                value="Support Request"
+              />
+              <label for="supportRequest">Support Request</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="msg">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+          </div>
+          <div class="check">
+            <div class="form-group">
+              <input type="checkbox" id="consent" name="consent" />
+              <label for="consent"></label>
+              <p>I consent to being contacted by the team</p>
+            </div>
+          </div>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
